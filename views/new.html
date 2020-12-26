@@ -1,0 +1,33 @@
+<div style="margin-top: 100px">
+  <div class="ui main text container segment">
+    <div class="ui huge header">New Blog</div>
+    <form class="ui form">
+      <div class="field">
+        <label>Title</label>
+        <input type="text" ng-model="title" placeholder="Title" required />
+      </div>
+      <div class="field">
+        <label>Author</label>
+        <input
+          type="text"
+          ng-model="author"
+          placeholder="Author Name"
+          required
+        />
+      </div>
+      <div class="field">
+        <label>Image</label>
+        <input type="text" ng-model="image" placeholder="Image" required />
+      </div>
+      <div class="field">
+        <label>Blog Content</label>
+        <textarea ng-model="description" required></textarea>
+      </div>
+      <input
+        class="ui violet basic button"
+        type="submit"
+        ng-click="newBlogPost(title,author,image,description)"
+      />
+    </form>
+  </div>
+</div>

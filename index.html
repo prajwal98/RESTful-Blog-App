@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./src/lib/angular.min.js"></script>
+    <script src="./src/lib/angular-route.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body class="ui inverted">
+    <navBar ng-include="'views/navBar.html'"></navBar>
+
+    <div ng-view></div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<div class="ui container" style="margin-top: 100px">
+  <div class="ui grid">
+    <div class="ten wide column">
+      <div class="ui main text segment">
+        <div class="ui huge header">{{post.title}}</div>
+        <div class="ui top attached">
+          <div class="item">
+            <img class="ui centered rounded image" src="{{post.image}}" />
+            <div class="content">
+              <span></span>
+            </div>
+            <div class="meta">
+              <span class="price">{{post.author}}</span>
+            </div>
+            <div class="description">
+              <p>{{post.description}}</p>
+            </div>
+            <a class="ui orange basic button" href="#!/blogs/{{post.id}}/edit"
+              >Edit</a
+            >
+            <a id="delete" href="#!/delete">
+              <button class="ui red basic button" ng-click="delete(post.id)">
+                Delete
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six wide column">
+      <div class="ui comments" style="margin-left: 1px">
+        <h3 class="ui dividing header">Comments</h3>
+        <div class="comment">
+          <a class="avatar">
+            <img
+              src="https://randomuser.me/api/portraits/thumb/men/{{random}}.jpg"
+            />
+          </a>
+          <div class="content">
+            <a class="author">Adam</a>
+            <div class="metadata">
+              <span class="date">Today at 5:42PM</span>
+            </div>
+            <div class="text">How artistic!</div>
+            <div class="actions">
+              <a class="reply">Reply</a>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <a class="avatar">
+            <img
+              src="https://randomuser.me/api/portraits/thumb/women/{{random}}.jpg"
+            />
+          </a>
+          <div class="content">
+            <a class="author">{{comments.name.first}}</a>
+            <div class="metadata">
+              <span class="date">Yesterday at 12:30AM</span>
+            </div>
+            <div class="text">
+              <p>This has been very useful for my research. Thanks as well!</p>
+            </div>
+            <div class="actions">
+              <a class="reply">Reply</a>
+            </div>
+          </div>
+          <div class="comments">
+            <div class="comment">
+              <a class="avatar">
+                <img src="{{comments.picture.thumbnail}}" />
+              </a>
+              <div class="content">
+                <a class="author">Jenny Hess</a>
+                <div class="metadata">
+                  <span class="date">Just now</span>
+                </div>
+                <div class="text">Elliot you are always so right :)</div>
+                <div class="actions">
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <a class="avatar">
+            <img src="https://randomuser.me/api/portraits/thumb/men/75.jpg" />
+          </a>
+          <div class="content">
+            <a class="author">Joe Henderson</a>
+            <div class="metadata">
+              <span class="date">5 days ago</span>
+            </div>
+            <div class="text">Dude, this is awesome. Thanks so much</div>
+            <div class="actions">
+              <a class="reply">Reply</a>
+            </div>
+          </div>
+        </div>
+        <form class="ui reply form">
+          <div class="field">
+            <textarea></textarea>
+          </div>
+          <div class="ui blue labeled submit icon button">
+            <i class="icon edit"></i> Add Reply
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

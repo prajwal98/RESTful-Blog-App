@@ -1,0 +1,29 @@
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "author":"Prajwal",
+      "image": "https://scx2.b-cdn.net/gfx/news/2019/2-nature.jpg",
+      "description": "It was an amazing venture for all of us. by spending time with the nature ",
+      "id": 1
+    }, {
+      "title": "My Second Blog",
+      "author":"Darshan",
+      "image": "https://post.greatist.com/wp-content/uploads/sites/3/2020/02/325466_1100-1100x628.jpg",
+      "description": "It was an amazing venture for all of us. by spending time with the nature ",
+      "id": 2
+    }, {
+      "title": "My Third Blog",
+      "author":"Gagan",
+      "image": "https://cosmosmagazine.com/wp-content/uploads/2020/02/191010_nature.jpg",
+      "description": "It was an amazing venture for all of us. by spending time with the nature ",
+      "id": 3
+    }, {
+      "title": "My Forth Blog",
+      "author":"Vedhu",
+      "image": "https://neurolandscape.org/wp-content/uploads/2018/05/MM8361_141029_01346.adapt_.1900.1.jpg",
+      "description": "It was an amazing venture for all of us. by spending time with the nature ",
+      "id": 4
+    }
+  ]
+}

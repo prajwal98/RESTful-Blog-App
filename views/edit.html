@@ -1,0 +1,23 @@
+<div class="ui main text container segment" style="margin-top: 6rem">
+  <div class="ui huge header">Edit {{post.title}}</div>
+  <form class="ui form">
+    <div class="field">
+      <label>Title</label>
+      <input type="text" value="{{post.title}}" />
+    </div>
+    <div class="field">
+      <label>Author</label>
+      <input type="text" name="blog[author]" value="{{post.author}}" />
+    </div>
+    <div class="field">
+      <label>Image</label>
+      <input type="text" name="blog[image]" value="{{post.image}}" />
+    </div>
+    <div class="field">
+      <label>Blog Content</label>
+      <textarea name="blog[body]">{{post.description}}</textarea>
+    </div>
+    <input class="ui violet big basic button" type="submit" />
+    {{post.title}}
+  </form>
+</div>

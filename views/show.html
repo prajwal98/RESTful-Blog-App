@@ -15,7 +15,10 @@
             <div class="description">
               <p>{{post.description}}</p>
             </div>
-            <a class="ui orange basic button" href="#!/blogs/{{post.id}}/edit"
+            <a
+              class="ui orange basic button"
+              href="#!/blogs/{{post.id - 1}}/edit"
+              ng-click="editPost(post.title)"
               >Edit</a
             >
             <a id="delete" href="#!/delete">

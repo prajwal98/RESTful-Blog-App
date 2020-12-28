@@ -3,21 +3,27 @@
   <form class="ui form">
     <div class="field">
       <label>Title</label>
-      <input type="text" value="{{post.title}}" />
+      <input type="text" ng-model="title" />
     </div>
     <div class="field">
       <label>Author</label>
-      <input type="text" name="blog[author]" value="{{post.author}}" />
+      <input type="text" ng-model="author" />
     </div>
     <div class="field">
       <label>Image</label>
-      <input type="text" name="blog[image]" value="{{post.image}}" />
+      <input type="text" ng-model="image" />
     </div>
     <div class="field">
       <label>Blog Content</label>
-      <textarea name="blog[body]">{{post.description}}</textarea>
+      <textarea>{{description}}</textarea>
     </div>
-    <input class="ui violet big basic button" type="submit" />
-    {{post.title}}
+    <a href="#!/blogs/{{post.id - 1}}">
+      <input
+        class="ui violet big basic button"
+        type="submit"
+        ng-click="updatePost(post.id, title,author,image,description)"
+      />
+    </a>
+    {{values}}
   </form>
 </div>

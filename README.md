@@ -1,3 +1,5 @@
 # RESTful-Blog-App
-npm i
-install:Live Server
+# install:Live Server
+# command1: npm i
+# command2: npm run json-server
+
